@@ -126,11 +126,7 @@ footer.innerText = siteContent['footer']['copyright'];
 //I forgot to do this, lol!!!
 //Here is part 3.
 //
-//green text
-let greenText = document.getElementsByTagName('a');
-for(let i = 0; i < greenText.length; i++) {
-  greenText[i].style.color = 'green';
-}
+
 //appendChild
 let newAnchor = document.createElement('a');
 newAnchor.appendChild(document.createTextNode('appended'));
@@ -144,3 +140,9 @@ newAnchor1.appendChild(document.createTextNode('prepended'));
 let ap1 = document.querySelector('nav');
 
 ap1.prepend(newAnchor1);
+
+//green text
+let greenText = document.getElementsByTagName('a');
+for(let i = 0; i < greenText.length; i++) {
+  greenText[i].style.color = 'green';
+}
