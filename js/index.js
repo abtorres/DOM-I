@@ -42,6 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //nav
+
 let services = document.getElementsByTagName('a')[0];
 services.innerText = siteContent['nav']['nav-item-1'];
 
@@ -120,3 +121,26 @@ email.innerText = siteContent['contact']['email'];
 //footer
 let footer = document.getElementsByTagName('p')[8];
 footer.innerText = siteContent['footer']['copyright'];
+
+
+//I forgot to do this, lol!!!
+//Here is part 3.
+//
+//green text
+let greenText = document.getElementsByTagName('a');
+for(let i = 0; i < greenText.length; i++) {
+  greenText[i].style.color = 'green';
+}
+//appendChild
+let newAnchor = document.createElement('a');
+newAnchor.appendChild(document.createTextNode('appended'));
+let ap = document.querySelector('nav');
+
+ap.appendChild(newAnchor)
+
+//prepend
+let newAnchor1 = document.createElement('a');
+newAnchor1.appendChild(document.createTextNode('prepended'));
+let ap1 = document.querySelector('nav');
+
+ap1.prepend(newAnchor1);
